@@ -22,4 +22,9 @@ public class AtivoController {
         return _ativosService.listAll();
     }
 
+    @GetMapping("/ordenar-por-pl")
+    public List<Ativo> getAtivosOrderedByPlDesc() {
+        return _ativosService.getAtivosOrderedByPlDesc();
+    }
+
 }

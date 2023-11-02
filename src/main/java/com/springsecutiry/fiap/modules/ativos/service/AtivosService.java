@@ -17,4 +17,8 @@ public class AtivosService {
     public List<Ativo> listAll() {
         return _ativoRepository.findAll();
     }
+
+    public List<Ativo> getAtivosOrderedByPlDesc() {
+        return _ativoRepository.findAllByOrderByPlDesc();
+    }
 }
